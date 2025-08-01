@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ismael Corporán | Desarrollador Full-Stack</title>
+    <title>Ismael Corporán | Desarrollador Web Junior</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
-            --purple-1: #240066;
-            --purple-2: #3C096C;
-            --purple-3: #5A189A;
-            --purple-4: #6D0CCD;
-            --purple-5: #7F00FF;
-            --gradient-1: linear-gradient(135deg, var(--purple-1), var(--purple-5));
-            --gradient-2: linear-gradient(135deg, var(--purple-2), var(--purple-4));
+            --violet-1: #f0e6ff;
+            --violet-2: #d9b3ff;
+            --violet-3: #c280ff;
+            --violet-4: #ab4dff;
+            --violet-5: #941aff;
+            --gradient-1: linear-gradient(135deg, var(--violet-1), var(--violet-5));
+            --gradient-2: linear-gradient(135deg, var(--violet-2), var(--violet-4));
         }
 
         * {
@@ -27,8 +27,8 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #0a0a1a;
-            color: white;
+            background-color: #f5f5f5;
+            color: #333;
             overflow-x: hidden;
         }
 
@@ -41,21 +41,17 @@
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            background-color: rgba(10, 10, 26, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(127, 0, 255, 0.2);
+            border-bottom: 1px solid rgba(148, 26, 255, 0.2);
         }
 
         .logo {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.8rem;
             font-weight: 700;
-            color: white;
+            color: var(--violet-5);
             text-decoration: none;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
         }
 
         nav ul {
@@ -69,14 +65,14 @@
 
         nav ul li a {
             text-decoration: none;
-            color: white;
+            color: #333;
             font-weight: 500;
             position: relative;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: var(--purple-5);
+            color: var(--violet-5);
         }
 
         nav ul li a::after {
@@ -102,7 +98,7 @@
         .hamburger div {
             width: 25px;
             height: 3px;
-            background-color: white;
+            background-color: #333;
             margin: 5px;
             transition: all 0.3s ease;
         }
@@ -115,6 +111,7 @@
             padding: 0 5%;
             position: relative;
             overflow: hidden;
+            background: linear-gradient(135deg, var(--violet-1), var(--violet-2));
         }
 
         .hero-content {
@@ -137,7 +134,7 @@
             font-size: 1.2rem;
             margin-bottom: 30px;
             line-height: 1.6;
-            color: rgba(255, 255, 255, 0.8);
+            color: #555;
             animation: fadeInUp 1s ease 0.2s both;
         }
 
@@ -160,7 +157,7 @@
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(127, 0, 255, 0.3);
+            box-shadow: 0 10px 20px rgba(148, 26, 255, 0.3);
         }
 
         .btn::before {
@@ -184,24 +181,24 @@
             bottom: 0;
             width: 500px;
             height: 500px;
-            background: linear-gradient(145deg, rgba(127, 0, 255, 0.2), rgba(105, 0, 255, 0.1));
+            background: linear-gradient(145deg, rgba(148, 26, 255, 0.2), rgba(105, 0, 255, 0.1));
             border-radius: 50%;
             z-index: 5;
             animation: float 6s ease-in-out infinite;
             box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(127, 0, 255, 0.3);
+            border: 1px solid rgba(148, 26, 255, 0.3);
         }
 
         .avatar-inner {
             position: absolute;
             width: 300px;
             height: 300px;
-            background: linear-gradient(145deg, rgba(127, 0, 255, 0.3), rgba(105, 0, 255, 0.2));
+            background: linear-gradient(145deg, rgba(148, 26, 255, 0.3), rgba(105, 0, 255, 0.2));
             border-radius: 50%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            box-shadow: inset 0 0 30px rgba(127, 0, 255, 0.5);
+            box-shadow: inset 0 0 30px rgba(148, 26, 255, 0.5);
             animation: pulse 2s ease-in-out infinite alternate;
         }
 
@@ -217,7 +214,7 @@
 
         .floating-element {
             position: absolute;
-            background: rgba(127, 0, 255, 0.1);
+            background: rgba(148, 26, 255, 0.1);
             border-radius: 50%;
             filter: blur(5px);
             animation: float 15s linear infinite;
@@ -244,7 +241,7 @@
         }
 
         .section-title p {
-            color: rgba(255, 255, 255, 0.7);
+            color: #555;
             max-width: 700px;
             margin: 0 auto;
         }
@@ -267,7 +264,7 @@
         .about-image img {
             width: 100%;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             transition: transform 0.5s;
         }
 
@@ -284,7 +281,7 @@
             content: '';
             position: absolute;
             width: 2px;
-            background: linear-gradient(to bottom, var(--purple-5), var(--purple-1));
+            background: linear-gradient(to bottom, var(--violet-5), var(--violet-1));
             top: 0;
             bottom: 0;
             left: 30px;
@@ -317,20 +314,21 @@
 
         .timeline-content {
             margin-left: 60px;
-            background: rgba(16, 16, 36, 0.5);
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
-            border-left: 2px solid var(--purple-5);
+            border-left: 2px solid var(--violet-5);
             position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .timeline-content h3 {
             margin-bottom: 5px;
-            color: var(--purple-5);
+            color: var(--violet-5);
         }
 
         .timeline-content p {
-            color: rgba(255, 255, 255, 0.8);
+            color: #555;
         }
 
         .counters {
@@ -341,12 +339,13 @@
 
         .counter-item {
             text-align: center;
-            background: rgba(16, 16, 36, 0.5);
+            background: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 10px;
             flex: 1;
             margin: 0 10px;
             transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .counter-item:hover {
@@ -363,7 +362,7 @@
         }
 
         .counter-item p {
-            color: rgba(255, 255, 255, 0.7);
+            color: #555;
         }
 
         /* Skills Section Styles */
@@ -378,7 +377,7 @@
         .skill-card {
             width: 150px;
             height: 180px;
-            background: rgba(16, 16, 36, 0.5);
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             display: flex;
             flex-direction: column;
@@ -388,7 +387,8 @@
             transition: all 0.5s;
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(127, 0, 255, 0.2);
+            border: 1px solid rgba(148, 26, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .skill-card::before {
@@ -398,7 +398,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(127, 0, 255, 0.1), transparent);
+            background: linear-gradient(45deg, transparent, rgba(148, 26, 255, 0.1), transparent);
             transform: translateX(-100%);
             transition: all 0.5s;
         }
@@ -409,7 +409,7 @@
 
         .skill-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(127, 0, 255, 0.2);
+            box-shadow: 0 15px 30px rgba(148, 26, 255, 0.2);
         }
 
         .skill-icon {
@@ -426,12 +426,12 @@
 
         .skill-icon i {
             font-size: 3rem;
-            color: var(--purple-5);
+            color: var(--violet-5);
         }
 
         .skill-name {
             font-weight: 500;
-            color: white;
+            color: #333;
             z-index: 1;
         }
 
@@ -441,11 +441,11 @@
         }
 
         .project-card {
-            background: rgba(16, 16, 36, 0.5);
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             overflow: hidden;
             margin-bottom: 30px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.5s;
             height: 300px;
             position: relative;
@@ -453,7 +453,7 @@
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(127, 0, 255, 0.2);
+            box-shadow: 0 15px 30px rgba(148, 26, 255, 0.2);
         }
 
         .project-image {
@@ -478,11 +478,11 @@
 
         .project-info h3 {
             margin-bottom: 10px;
-            color: var(--purple-5);
+            color: var(--violet-5);
         }
 
         .project-info p {
-            color: rgba(255, 255, 255, 0.8);
+            color: #555;
             margin-bottom: 15px;
         }
 
@@ -494,10 +494,11 @@
         }
 
         .project-tag {
-            background: rgba(127, 0, 255, 0.2);
+            background: rgba(148, 26, 255, 0.2);
             padding: 5px 10px;
             border-radius: 5px;
             font-size: 0.8rem;
+            color: var(--violet-5);
         }
 
         .project-links {
@@ -508,8 +509,8 @@
         .project-link {
             display: inline-block;
             padding: 8px 15px;
-            background: rgba(127, 0, 255, 0.2);
-            color: white;
+            background: rgba(148, 26, 255, 0.2);
+            color: var(--violet-5);
             text-decoration: none;
             border-radius: 5px;
             font-size: 0.9rem;
@@ -518,6 +519,7 @@
 
         .project-link:hover {
             background: var(--gradient-1);
+            color: white;
         }
 
         /* Testimonials Section Styles */
@@ -530,13 +532,14 @@
         }
 
         .testimonial-card {
-            background: rgba(16, 16, 36, 0.5);
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             padding: 30px;
             max-width: 400px;
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(127, 0, 255, 0.2);
+            border: 1px solid rgba(148, 26, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .testimonial-card::before {
@@ -552,7 +555,7 @@
         .testimonial-content {
             font-style: italic;
             margin-bottom: 20px;
-            color: rgba(255, 255, 255, 0.9);
+            color: #555;
             position: relative;
             z-index: 1;
         }
@@ -572,20 +575,21 @@
 
         .author-info h4 {
             margin-bottom: 5px;
-            color: white;
+            color: #333;
         }
 
         .author-info p {
-            color: rgba(255, 255, 255, 0.7);
+            color: #555;
             font-size: 0.9rem;
         }
 
         /* Footer Styles */
         footer {
-            background: rgba(10, 10, 26, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             padding: 50px 5% 20px;
             text-align: center;
-            border-top: 1px solid rgba(127, 0, 255, 0.2);
+            border-top: 1px solid rgba(148, 26, 255, 0.2);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .social-links {
@@ -602,20 +606,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(127, 0, 255, 0.1);
-            color: white;
+            background: rgba(148, 26, 255, 0.1);
+            color: var(--violet-5);
             text-decoration: none;
             transition: all 0.3s;
         }
 
         .social-link:hover {
             background: var(--gradient-1);
+            color: white;
             transform: translateY(-3px);
         }
 
         .copyright {
             margin-bottom: 20px;
-            color: rgba(255, 255, 255, 0.7);
+            color: #555;
         }
 
         /* Animations */
@@ -655,10 +660,10 @@
 
         @keyframes pulse {
             from {
-                box-shadow: 0 0 0 0 rgba(127, 0, 255, 0.4);
+                box-shadow: 0 0 0 0 rgba(148, 26, 255, 0.4);
             }
             to {
-                box-shadow: 0 0 0 20px rgba(127, 0, 255, 0);
+                box-shadow: 0 0 0 20px rgba(148, 26, 255, 0);
             }
         }
 
@@ -696,7 +701,7 @@
                 right: -100%;
                 width: 80%;
                 height: 100vh;
-                background: rgba(10, 10, 26, 0.95);
+                background: rgba(255, 255, 255, 0.95);
                 backdrop-filter: blur(10px);
                 transition: all 0.5s;
                 padding: 80px 20px 20px;
@@ -773,7 +778,7 @@
 
     <section class="hero" id="inicio">
         <div class="hero-content">
-            <h1>Desarrollador Full-Stack</h1>
+            <h1>Desarrollador Web Junior</h1>
             <p>Creando experiencias digitales innovadoras con tecnología de vanguardia. Transformando ideas en soluciones funcionales y visualmente impresionantes.</p>
             <a href="#proyectos" class="btn">Ver mis proyectos</a>
         </div>
@@ -795,7 +800,7 @@
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>Soy un apasionado desarrollador full-stack con más de 5 años de experiencia creando soluciones digitales innovadoras. Mi viaje en el mundo de la tecnología comenzó con una curiosidad insaciable por entender cómo funcionan las cosas, lo que me llevó a sumergirme en el desarrollo de software.</p>
+                <p>Soy un apasionado desarrollador web junior con experiencia en la creación de soluciones digitales innovadoras. Mi viaje en el mundo de la tecnología comenzó con una curiosidad insaciable por entender cómo funcionan las cosas, lo que me llevó a sumergirme en el desarrollo de software.</p>
                 <p>A lo largo de mi carrera, he tenido el privilegio de trabajar en proyectos desafiantes que han puesto a prueba mis habilidades y me han permitido crecer tanto profesional como personalmente. Cada proyecto ha sido una oportunidad para aprender algo nuevo y mejorar mis capacidades.</p>
                 <p>Mi enfoque se centra en crear aplicaciones que no solo sean funcionales, sino también intuitivas y visualmente atractivas. Creo firmemente que la tecnología debe servir para mejorar la vida de las personas, y me esfuerzo por desarrollar soluciones que marquen una diferencia positiva.</p>
             </div>
@@ -807,49 +812,43 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Inicio de mi carrera</h3>
-                    <p>2018 - Comencé mi viaje en el desarrollo de software como autodidacta, aprendiendo los fundamentos de la programación.</p>
+                    <p>2020 - Comencé mi viaje en el desarrollo de software como autodidacta, aprendiendo los fundamentos de la programación.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Primer empleo profesional</h3>
-                    <p>2019 - Me uní a una startup local como desarrollador junior, donde trabajé en proyectos emocionantes y desafiantes.</p>
+                    <p>2021 - Me uní a una startup local como desarrollador junior, donde trabajé en proyectos emocionantes y desafiantes.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Especialización en desarrollo full-stack</h3>
-                    <p>2020 - Amplié mis habilidades para convertirme en un desarrollador full-stack, dominando tanto el frontend como el backend.</p>
+                    <h3>Especialización en WordPress</h3>
+                    <p>2022 - Amplié mis habilidades para convertirme en un desarrollador especializado en WordPress, dominando tanto el frontend como el backend.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Liderazgo de proyectos</h3>
-                    <p>2021 - Asumí roles de liderazgo en proyectos complejos, guiando equipos hacia el éxito y entregando soluciones de alta calidad.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Innovación continua</h3>
-                    <p>2022 - Presente - Continúo aprendiendo y adoptando nuevas tecnologías para mantenerme a la vanguardia del desarrollo de software.</p>
+                    <p>2023 - Asumí roles de liderazgo en proyectos complejos, guiando equipos hacia el éxito y entregando soluciones de alta calidad.</p>
                 </div>
             </div>
         </div>
         <div class="counters">
             <div class="counter-item">
-                <h3 class="counter">5</h3>
+                <h3 class="counter">2</h3>
                 <p>Años de experiencia</p>
             </div>
             <div class="counter-item">
-                <h3 class="counter">30</h3>
+                <h3 class="counter">10</h3>
                 <p>Proyectos completados</p>
             </div>
             <div class="counter-item">
-                <h3 class="counter">20</h3>
+                <h3 class="counter">8</h3>
                 <p>Clientes satisfechos</p>
             </div>
             <div class="counter-item">
-                <h3 class="counter">15</h3>
+                <h3 class="counter">7</h3>
                 <p>Tecnologías dominadas</p>
             </div>
         </div>
@@ -881,33 +880,27 @@
             </div>
             <div class="skill-card">
                 <div class="skill-icon">
-                    <i class="fab fa-react"></i>
+                    <i class="fab fa-wordpress"></i>
                 </div>
-                <h3 class="skill-name">React</h3>
+                <h3 class="skill-name">WordPress</h3>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">
-                    <i class="fab fa-node-js"></i>
+                    <i class="fab fa-php"></i>
                 </div>
-                <h3 class="skill-name">Node.js</h3>
+                <h3 class="skill-name">PHP</h3>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">
                     <i class="fas fa-database"></i>
                 </div>
-                <h3 class="skill-name">MongoDB</h3>
+                <h3 class="skill-name">MySQL</h3>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">
                     <i class="fab fa-git-alt"></i>
                 </div>
                 <h3 class="skill-name">Git</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fab fa-python"></i>
-                </div>
-                <h3 class="skill-name">Python</h3>
             </div>
         </div>
     </section>
@@ -923,12 +916,12 @@
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 1">
                 </div>
                 <div class="project-info">
-                    <h3>Plataforma de E-commerce</h3>
-                    <p>Una plataforma completa de comercio electrónico con carrito de compras, pasarela de pago y panel de administración.</p>
+                    <h3>Sitio Web Corporativo</h3>
+                    <p>Un sitio web corporativo moderno y responsivo para una empresa local, construido con WordPress y personalizado según las necesidades del cliente.</p>
                     <div class="project-tags">
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">WordPress</span>
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">CSS</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link">Ver Demo</a>
@@ -941,12 +934,12 @@
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 2">
                 </div>
                 <div class="project-info">
-                    <h3>Sistema de Gestión de Tareas</h3>
-                    <p>Aplicación para la gestión de tareas y proyectos con funciones de colaboración en equipo y seguimiento de tiempo.</p>
+                    <h3>Tienda en Línea</h3>
+                    <p>Una tienda en línea completa con carrito de compras y pasarela de pago, desarrollada con WooCommerce y personalizada para el cliente.</p>
                     <div class="project-tags">
-                        <span class="project-tag">Vue.js</span>
-                        <span class="project-tag">Firebase</span>
-                        <span class="project-tag">Tailwind CSS</span>
+                        <span class="project-tag">WooCommerce</span>
+                        <span class="project-tag">WordPress</span>
+                        <span class="project-tag">JavaScript</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link">Ver Demo</a>
@@ -959,12 +952,12 @@
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 3">
                 </div>
                 <div class="project-info">
-                    <h3>Red Social para Desarrolladores</h3>
-                    <p>Plataforma donde los desarrolladores pueden conectarse, compartir proyectos y colaborar en código abierto.</p>
+                    <h3>Blog Personal</h3>
+                    <p>Un blog personal con un diseño minimalista y moderno, construido con WordPress y personalizado según las preferencias del cliente.</p>
                     <div class="project-tags">
-                        <span class="project-tag">Next.js</span>
-                        <span class="project-tag">GraphQL</span>
-                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">WordPress</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link">Ver Demo</a>
@@ -1111,7 +1104,7 @@
 
             // Set counter targets and animate on scroll
             counters.forEach((counter, index) => {
-                const targets = [5, 30, 20, 15];
+                const targets = [2, 10, 8, 7];
                 counter.setAttribute('data-target', targets[index]);
             });
 
@@ -1154,7 +1147,7 @@
 
                 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
                 const material = new THREE.MeshBasicMaterial({
-                    color: 0x7F00FF,
+                    color: 0x941aff,
                     wireframe: true
                 });
                 const torus = new THREE.Mesh(geometry, material);
