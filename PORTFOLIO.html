@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ismael Solano - Expert WordPress Developer & SEO Specialist with over 3 years of hands-on experience helping businesses, entrepreneurs, and enterprises transform their digital presence into revenue-generating machines. I specialize in custom WordPress development, advanced technical SEO optimization, high-converting e-commerce solutions with WooCommerce, performance optimization, and comprehensive digital strategy. My expertise spans across creating custom WordPress themes from scratch, developing powerful plugins, implementing sophisticated SEO strategies that dominate search engines, and optimizing websites for maximum speed and Core Web Vitals compliance. I've successfully delivered projects across diverse industries including technology, legal services, health and wellness, e-commerce, content marketing, and corporate branding. My data-driven approach has helped clients achieve remarkable results: over 420% organic traffic growth, 85+ keywords ranking in Google's top 3 positions, PageSpeed scores above 95, bounce rate reductions of 52%, and conversion rate improvements exceeding 180%. Whether you're a startup looking to establish your online presence, an established business seeking to scale your digital operations, or an enterprise requiring complex WordPress solutions, I provide end-to-end services including website architecture design, mobile-responsive development, WooCommerce store setup and optimization, local SEO strategies, content marketing planning, Google Analytics configuration, Search Console optimization, schema markup implementation, site migration services, security hardening, ongoing maintenance, and 24/7 technical support. I believe in transparency, clear communication, and delivering measurable ROI. Every project I undertake is backed by comprehensive research, strategic planning, and continuous optimization. Let's collaborate to build a website that doesn't just look visually stunning, but actually works as a powerful 24/7 sales and marketing asset for your business, driving qualified leads, increasing conversions, and maximizing your return on investment.">
-    <title>Ismael Solano | WordPress & SEO Expert Portfolio</title>
+    <title>Ismael Solano | Portfolio Profesional</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,27 +15,28 @@
         }
 
         :root {
-            --color-primary: #47034E;
-            --color-secondary: #F8F7F9;
-            --color-accent: #7E3285;
-            --color-dark: #5D0565;
-            --color-text: #2D2D2D;
-            --color-text-light: #6B7280;
+            /* Nueva Regla 60-40-10 - Paleta moderna y minimalista */
+            --color-primary: #0A0E27;      /* 60% - Azul marino oscuro */
+            --color-secondary: #F5F7FA;    /* 40% - Gris azulado claro */
+            --color-accent: #6366F1;       /* 10% - Índigo vibrante */
+            --color-text: #1E293B;
+            --color-text-light: #64748B;
             --color-white: #FFFFFF;
         }
 
         body {
-            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
             color: var(--color-text);
             background-color: var(--color-secondary);
             font-weight: 400;
         }
 
+        /* Header/Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-dark) 100%);
+            background: var(--color-primary);
             color: white;
-            padding: 140px 20px 120px;
+            padding: 120px 20px 100px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -45,30 +45,23 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -40%;
-            right: -15%;
-            width: 700px;
-            height: 700px;
-            background: radial-gradient(circle, rgba(126, 50, 133, 0.3) 0%, transparent 70%);
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
             border-radius: 50%;
-            animation: float 20s ease-in-out infinite;
         }
 
         .hero::after {
             content: '';
             position: absolute;
-            bottom: -35%;
-            left: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(93, 5, 101, 0.2) 0%, transparent 70%);
+            bottom: -30%;
+            left: -5%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
             border-radius: 50%;
-            animation: float 15s ease-in-out infinite reverse;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(30px, 30px); }
         }
 
         .hero-content {
@@ -79,30 +72,26 @@
         }
 
         .hero h1 {
-            font-size: 4.5em;
-            margin-bottom: 20px;
+            font-size: 4em;
+            margin-bottom: 15px;
             font-weight: 700;
-            letter-spacing: -3px;
+            letter-spacing: -2px;
             animation: fadeInUp 0.8s ease;
-            background: linear-gradient(135deg, #FFFFFF 0%, #E0D0E3 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         .hero .subtitle {
-            font-size: 1.6em;
-            margin-bottom: 25px;
-            color: #D8BFE0;
-            font-weight: 400;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #94A3B8;
+            font-weight: 300;
             letter-spacing: -0.5px;
             animation: fadeInUp 0.8s ease 0.2s backwards;
         }
 
         .hero .tagline {
-            font-size: 1.2em;
-            margin-bottom: 45px;
-            color: #E8DFF0;
+            font-size: 1.15em;
+            margin-bottom: 40px;
+            color: #CBD5E1;
             font-weight: 300;
             max-width: 700px;
             margin-left: auto;
@@ -112,32 +101,34 @@
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-dark) 100%);
+            background-color: var(--color-accent);
             color: white;
-            padding: 18px 50px;
+            padding: 16px 48px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.05em;
-            transition: all 0.4s ease;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 1em;
+            transition: all 0.3s ease;
             animation: fadeInUp 0.8s ease 0.6s backwards;
-            letter-spacing: 0.5px;
-            box-shadow: 0 10px 30px rgba(126, 50, 133, 0.3);
+            letter-spacing: 0.3px;
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(126, 50, 133, 0.5);
+            background-color: #4F46E5;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
         }
 
+        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
+        /* Sections */
         section {
-            padding: 110px 20px;
+            padding: 100px 20px;
         }
 
         section:nth-child(even) {
@@ -145,32 +136,33 @@
         }
 
         .section-title {
-            font-size: 3em;
+            font-size: 2.8em;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: var(--color-primary);
             font-weight: 700;
-            letter-spacing: -2px;
+            letter-spacing: -1.5px;
         }
 
         .section-subtitle {
             text-align: center;
             color: var(--color-text-light);
-            margin-bottom: 70px;
-            font-size: 1.2em;
+            margin-bottom: 60px;
+            font-size: 1.15em;
             font-weight: 300;
         }
 
+        /* About Section */
         .about-content {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
 
         .about-content p {
-            margin-bottom: 28px;
-            font-size: 1.18em;
-            line-height: 1.9;
+            margin-bottom: 25px;
+            font-size: 1.15em;
+            line-height: 1.8;
             color: var(--color-text);
             font-weight: 300;
         }
@@ -178,133 +170,125 @@
         .skills-highlight {
             display: flex;
             justify-content: center;
-            gap: 18px;
+            gap: 20px;
             flex-wrap: wrap;
-            margin-top: 55px;
+            margin-top: 50px;
         }
 
         .skill-badge {
-            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-dark) 100%);
+            background-color: var(--color-accent);
             color: white;
-            padding: 14px 32px;
-            border-radius: 50px;
-            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 500;
             font-size: 0.95em;
-            letter-spacing: 0.5px;
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 15px rgba(126, 50, 133, 0.2);
+            letter-spacing: 0.3px;
+            transition: all 0.3s ease;
         }
 
         .skill-badge:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 8px 25px rgba(126, 50, 133, 0.35);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
         }
 
+        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 35px;
+            gap: 30px;
             max-width: 1000px;
             margin: 0 auto;
         }
 
         .service-card {
             background: var(--color-white);
-            padding: 50px 40px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(71, 3, 78, 0.08);
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
+            padding: 45px 35px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+            border: 1px solid #E2E8F0;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(126, 50, 133, 0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.1);
             border-color: var(--color-accent);
         }
 
         .service-icon {
-            font-size: 3em;
-            margin-bottom: 28px;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        .service-card:hover .service-icon {
-            filter: grayscale(0%);
+            font-size: 2.5em;
+            margin-bottom: 25px;
         }
 
         .service-card h3 {
             color: var(--color-primary);
-            margin-bottom: 18px;
-            font-size: 1.5em;
-            font-weight: 700;
-            letter-spacing: -0.8px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 600;
+            letter-spacing: -0.5px;
         }
 
         .service-card p {
             color: var(--color-text-light);
-            line-height: 1.8;
+            line-height: 1.7;
             font-weight: 300;
-            font-size: 1.05em;
         }
 
+        /* Projects Grid - SIN IMÁGENES */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
+            gap: 35px;
         }
 
         .project-card {
             background: var(--color-white);
-            border-radius: 20px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(71, 3, 78, 0.08);
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
-            padding: 45px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+            border: 1px solid #E2E8F0;
+            padding: 40px;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(126, 50, 133, 0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.1);
             border-color: var(--color-accent);
         }
 
         .project-category {
             color: var(--color-accent);
-            font-weight: 700;
+            font-weight: 600;
             font-size: 0.85em;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 18px;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
         }
 
         .project-card h3 {
             color: var(--color-primary);
-            margin-bottom: 22px;
-            font-size: 1.7em;
+            margin-bottom: 20px;
+            font-size: 1.6em;
             font-weight: 700;
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
         }
 
         .project-description {
             color: var(--color-text-light);
-            margin-bottom: 35px;
-            line-height: 1.9;
+            margin-bottom: 30px;
+            line-height: 1.8;
             font-weight: 300;
-            font-size: 1.05em;
         }
 
         .project-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 28px;
-            margin-bottom: 35px;
-            padding: 30px;
-            background: linear-gradient(135deg, rgba(126, 50, 133, 0.05) 0%, rgba(93, 5, 101, 0.05) 100%);
-            border-radius: 15px;
-            border: 1px solid rgba(126, 50, 133, 0.1);
+            gap: 25px;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: var(--color-secondary);
+            border-radius: 8px;
         }
 
         .stat {
@@ -312,104 +296,137 @@
         }
 
         .stat-value {
-            font-size: 2.2em;
+            font-size: 2em;
             font-weight: 700;
             color: var(--color-accent);
             display: block;
-            letter-spacing: -1.5px;
+            letter-spacing: -1px;
         }
 
         .stat-label {
             font-size: 0.85em;
             color: var(--color-text-light);
             text-transform: uppercase;
-            letter-spacing: 1.2px;
-            font-weight: 600;
-            margin-top: 8px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin-top: 5px;
         }
 
         .project-tags {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
         }
 
         .tag {
             background-color: var(--color-secondary);
             color: var(--color-primary);
-            padding: 10px 20px;
-            border-radius: 50px;
+            padding: 8px 18px;
+            border-radius: 6px;
             font-size: 0.85em;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-            border: 1px solid rgba(126, 50, 133, 0.15);
-            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 0.2px;
         }
 
-        .tag:hover {
-            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-dark) 100%);
-            color: white;
-            transform: translateY(-2px);
-        }
-
+        /* Technical Skills */
         .tech-skills {
             max-width: 900px;
             margin: 0 auto;
         }
 
         .skill-category {
-            margin-bottom: 50px;
+            margin-bottom: 45px;
         }
 
         .skill-category h3 {
             color: var(--color-primary);
-            margin-bottom: 28px;
-            font-size: 1.4em;
-            font-weight: 700;
-            letter-spacing: -0.8px;
+            margin-bottom: 25px;
+            font-size: 1.3em;
+            font-weight: 600;
+            letter-spacing: -0.5px;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 12px;
         }
 
         .skill-item {
             background: var(--color-white);
-            padding: 14px 28px;
-            border-radius: 50px;
-            box-shadow: 0 3px 12px rgba(71, 3, 78, 0.06);
+            padding: 12px 24px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
             transition: all 0.3s ease;
-            border: 2px solid transparent;
-            font-weight: 500;
+            border: 1px solid #E2E8F0;
+            font-weight: 400;
             font-size: 0.95em;
         }
 
         .skill-item:hover {
             border-color: var(--color-accent);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(126, 50, 133, 0.2);
-            background: linear-gradient(135deg, rgba(126, 50, 133, 0.05) 0%, rgba(93, 5, 101, 0.05) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.15);
         }
 
+        /* Contact Section */
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            background: var(--color-white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 1.05em;
+            transition: all 0.3s ease;
+            border: 1px solid #E2E8F0;
+            font-weight: 400;
+        }
+
+        .contact-item:hover {
+            background-color: var(--color-accent);
+            color: white;
+            transform: translateX(8px);
+            border-color: var(--color-accent);
+        }
+
+        .contact-icon {
+            font-size: 1.5em;
+        }
+
+        /* Footer */
         footer {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-dark) 100%);
+            background-color: var(--color-primary);
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         footer p {
             font-weight: 300;
-            opacity: 0.9;
-            font-size: 1.05em;
+            opacity: 0.8;
         }
 
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(40px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -417,17 +434,18 @@
             }
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.8em;
+                font-size: 2.5em;
             }
 
             .hero .subtitle {
-                font-size: 1.3em;
+                font-size: 1.2em;
             }
 
             .section-title {
-                font-size: 2.2em;
+                font-size: 2em;
             }
 
             .projects-grid {
@@ -446,80 +464,83 @@
     </style>
 </head>
 <body>
+    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
             <h1>Ismael Solano</h1>
-            <p class="subtitle">WordPress & SEO Expert</p>
-            <p class="tagline">Transforming ordinary websites into powerful, revenue-generating digital assets through strategic WordPress development and data-driven SEO optimization, with over 3 years of proven experience delivering exceptional, measurable results that consistently exceed client expectations and drive sustainable business growth</p>
-            <a href="#proyectos" class="cta-button">View Projects</a>
+            <p class="subtitle">Experto en WordPress & SEO</p>
+            <p class="tagline">Transformo sitios web en activos digitales rentables con 3 años de experiencia generando resultados medibles</p>
+            <a href="#contacto" class="cta-button">Hablemos de tu proyecto</a>
         </div>
     </header>
 
+    <!-- About Section -->
     <section id="sobre-mi">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">Digital strategy that generates real impact</p>
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="section-subtitle">Estrategia digital que genera impacto real</p>
             <div class="about-content">
-                <p>Over the past 3 years, I've helped businesses and entrepreneurs build their digital presence with optimized WordPress sites that not only look great, but generate real, measurable results. My passion lies in creating websites that work as 24/7 business assets.</p>
+                <p>Durante los últimos 3 años, he ayudado a empresas y emprendedores a construir su presencia digital con sitios WordPress optimizados que no solo se ven bien, sino que generan resultados reales.</p>
                 
-                <p>My approach combines strategic design, technical optimization, and intelligent SEO to ensure your website doesn't just exist—it stands out on Google and converts visitors into customers. I believe in data-driven decisions and transparent communication throughout every project.</p>
+                <p>Mi enfoque combina diseño estratégico, optimización técnica y SEO inteligente para que tu sitio web no solo exista, sino que destaque en Google y convierta visitantes en clientes.</p>
                 
-                <p>With extensive experience in custom WordPress development, e-commerce solutions, and advanced SEO strategies, I've successfully delivered projects across various industries including technology, legal services, health & wellness, and e-commerce. My clients have experienced traffic increases of over 400%, achieved top Google rankings, and seen significant improvements in conversion rates.</p>
-
-                <p>It's not just about creating beautiful pages. It's about building digital assets that grow your business while you sleep. From technical audits to content strategy, from performance optimization to local SEO—I provide comprehensive solutions that address every aspect of your online presence.</p>
+                <p>No se trata solo de crear páginas bonitas. Se trata de construir activos digitales que crecen tu negocio mientras duermes.</p>
 
                 <div class="skills-highlight">
                     <span class="skill-badge">WordPress Development</span>
-                    <span class="skill-badge">Technical SEO</span>
-                    <span class="skill-badge">Web Optimization</span>
+                    <span class="skill-badge">SEO Técnico</span>
+                    <span class="skill-badge">Optimización Web</span>
                     <span class="skill-badge">Content Strategy</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="servicios">
         <div class="container">
-            <h2 class="section-title">Services</h2>
-            <p class="section-subtitle">Complete solutions for your digital presence</p>
+            <h2 class="section-title">Servicios</h2>
+            <p class="section-subtitle">Soluciones completas para tu presencia digital</p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🚀</div>
-                    <h3>WordPress Development</h3>
-                    <p>Professional, fast, and customized websites. From landing pages to complete e-commerce solutions, with responsive design optimized for conversion and user experience.</p>
+                    <h3>Desarrollo WordPress</h3>
+                    <p>Sitios web profesionales, rápidos y personalizados. Desde landing pages hasta eCommerce completo, con diseño responsive y optimizado para conversión.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📈</div>
-                    <h3>Comprehensive SEO</h3>
-                    <p>Organic positioning that generates qualified traffic. Technical audits, content strategy, and on-page optimization to dominate search results and increase visibility.</p>
+                    <h3>SEO Integral</h3>
+                    <p>Posicionamiento orgánico que genera tráfico cualificado. Auditorías técnicas, estrategia de contenidos y optimización on-page para dominar los resultados de búsqueda.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
-                    <h3>Performance Optimization</h3>
-                    <p>Speed up your website up to 10x. Core Web Vitals optimization, advanced caching, image optimization, and clean code for an exceptional user experience.</p>
+                    <h3>Optimización de Rendimiento</h3>
+                    <p>Acelera tu sitio web hasta 10x. Core Web Vitals, caché avanzado, optimización de imágenes y código limpio para una experiencia de usuario excepcional.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔧</div>
-                    <h3>Maintenance & Support</h3>
-                    <p>Keep your WordPress secure, updated, and running perfectly. Automatic backups, regular updates, and constant monitoring to ensure peace of mind.</p>
+                    <h3>Mantenimiento & Soporte</h3>
+                    <p>Mantén tu WordPress seguro, actualizado y funcionando perfectamente. Backups automáticos, actualizaciones y monitoreo constante.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="proyectos">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Success stories with measurable impact</p>
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-subtitle">Casos de éxito con impacto medible</p>
             <div class="projects-grid">
+                <!-- Proyecto 1 -->
                 <div class="project-card">
                     <div class="project-category">eCommerce & SEO</div>
                     <h3>TechStore Premium</h3>
-                    <p class="project-description">Complete development of technology online store with WooCommerce. Implemented comprehensive SEO strategy, speed optimization, and UX design focused on conversion. Results achieved in 6 months.</p>
+                    <p class="project-description">Desarrollo completo de tienda online de tecnología con WooCommerce. Implementé estrategia SEO integral, optimización de velocidad y diseño UX centrado en conversión. Resultados en 6 meses.</p>
                     <div class="project-stats">
                         <div class="stat">
                             <span class="stat-value">+420%</span>
-                            <span class="stat-label">Organic Traffic</span>
+                            <span class="stat-label">Tráfico Orgánico</span>
                         </div>
                         <div class="stat">
                             <span class="stat-value">85+</span>
@@ -527,11 +548,11 @@
                         </div>
                         <div class="stat">
                             <span class="stat-value">3.2s</span>
-                            <span class="stat-label">Load Time</span>
+                            <span class="stat-label">Tiempo de Carga</span>
                         </div>
                         <div class="stat">
                             <span class="stat-value">+180%</span>
-                            <span class="stat-label">Conversions</span>
+                            <span class="stat-label">Conversiones</span>
                         </div>
                     </div>
                     <div class="project-tags">
@@ -543,10 +564,11 @@
                     </div>
                 </div>
 
+                <!-- Proyecto 2 -->
                 <div class="project-card">
                     <div class="project-category">Corporate Site & Branding</div>
-                    <h3>InnovaLegal Consultants</h3>
-                    <p class="project-description">Complete redesign of corporate site for legal firm. Migration to WordPress with modern design, content management system for legal blog, and local SEO optimization. Positioning in competitive market.</p>
+                    <h3>InnovaLegal Consultores</h3>
+                    <p class="project-description">Rediseño completo de sitio corporativo para firma legal. Migración a WordPress con diseño moderno, sistema de gestión de contenidos para blog jurídico y optimización SEO local. Posicionamiento en mercado competitivo.</p>
                     <div class="project-stats">
                         <div class="stat">
                             <span class="stat-value">96</span>
@@ -562,26 +584,27 @@
                         </div>
                         <div class="stat">
                             <span class="stat-value">+310%</span>
-                            <span class="stat-label">Monthly Leads</span>
+                            <span class="stat-label">Leads Mensuales</span>
                         </div>
                     </div>
                     <div class="project-tags">
                         <span class="tag">WordPress Custom Theme</span>
-                        <span class="tag">Local SEO</span>
+                        <span class="tag">SEO Local</span>
                         <span class="tag">Content Strategy</span>
                         <span class="tag">Google My Business</span>
                         <span class="tag">Elementor Pro</span>
                     </div>
                 </div>
 
+                <!-- Proyecto 3 -->
                 <div class="project-card">
                     <div class="project-category">Blog & Content Marketing</div>
                     <h3>VidaSaludable Magazine</h3>
-                    <p class="project-description">Built from scratch digital magazine about health and wellness. SEO-optimized web architecture, advanced categorization system, AdSense monetization, and programmatic content. Scaled to niche authority.</p>
+                    <p class="project-description">Construcción desde cero de revista digital sobre salud y bienestar. Arquitectura web optimizada para SEO, sistema de categorización avanzado, monetización con AdSense y contenido programático. Escalado a autoridad de nicho.</p>
                     <div class="project-stats">
                         <div class="stat">
                             <span class="stat-value">75K+</span>
-                            <span class="stat-label">Visits/Month</span>
+                            <span class="stat-label">Visitas/Mes</span>
                         </div>
                         <div class="stat">
                             <span class="stat-value">200+</span>
@@ -593,7 +616,7 @@
                         </div>
                         <div class="stat">
                             <span class="stat-value">4:30</span>
-                            <span class="stat-label">Avg. Time</span>
+                            <span class="stat-label">Tiempo Promedio</span>
                         </div>
                     </div>
                     <div class="project-tags">
@@ -609,10 +632,11 @@
         </div>
     </section>
 
+    <!-- Technical Skills -->
     <section id="habilidades">
         <div class="container">
-            <h2 class="section-title">Technical Stack</h2>
-            <p class="section-subtitle">Tools and technologies I master</p>
+            <h2 class="section-title">Stack Técnico</h2>
+            <p class="section-subtitle">Herramientas y tecnologías que domino</p>
             <div class="tech-skills">
                 <div class="skill-category">
                     <h3>🎨 WordPress Development</h3>
@@ -631,7 +655,7 @@
                 <div class="skill-category">
                     <h3>🔍 SEO & Marketing</h3>
                     <div class="skills-list">
-                        <span class="skill-item">Technical SEO</span>
+                        <span class="skill-item">SEO Técnico</span>
                         <span class="skill-item">Keyword Research</span>
                         <span class="skill-item">Google Search Console</span>
                         <span class="skill-item">Google Analytics 4</span>
@@ -643,7 +667,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>⚙️ Optimization & Performance</h3>
+                    <h3>⚙️ Optimización & Performance</h3>
                     <div class="skills-list">
                         <span class="skill-item">PageSpeed Optimization</span>
                         <span class="skill-item">Core Web Vitals</span>
@@ -656,7 +680,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>💻 Web Technologies</h3>
+                    <h3>💻 Tecnologías Web</h3>
                     <div class="skills-list">
                         <span class="skill-item">HTML5/CSS3</span>
                         <span class="skill-item">JavaScript</span>
@@ -671,14 +695,44 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="section-title">Trabajemos Juntos</h2>
+            <p class="section-subtitle">¿Listo para llevar tu proyecto al siguiente nivel?</p>
+            <div class="contact-content">
+                <p style="font-size: 1.1em; margin-bottom: 30px; font-weight: 300;">
+                    Ya sea que necesites un nuevo sitio WordPress, mejorar tu posicionamiento SEO, o darle un boost de velocidad a tu web actual, estoy aquí para ayudarte.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>ismael.solano@ejemplo.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn: /ismael-solano</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <span>GitHub: @ismaelsolano</span>
+                    </div>
+                </div>
+                <a href="mailto:ismael.solano@ejemplo.com" class="cta-button" style="margin-top: 40px;">Envíame un mensaje</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Ismael Solano. All rights reserved.</p>
-            <p style="margin-top: 10px;">Built with WordPress & SEO passion 🚀</p>
+            <p>&copy; 2024 Ismael Solano. Todos los derechos reservados.</p>
+            <p style="margin-top: 10px;">Hecho con WordPress & pasión por el SEO 🚀</p>
         </div>
     </footer>
 
     <script>
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -692,6 +746,7 @@
             });
         });
 
+        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -706,6 +761,7 @@
             });
         }, observerOptions);
 
+        // Observe all cards
         document.querySelectorAll('.project-card, .service-card, .skill-category').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
