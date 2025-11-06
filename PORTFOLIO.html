@@ -16,11 +16,10 @@
         }
 
         :root {
-            /* 60-30-10 Rule - Professional Purple Palette */
-            --color-primary: #47034E;      /* 60% - Deep dark purple */
-            --color-secondary: #F8F7F9;    /* 30% - Soft light gray */
-            --color-accent: #7E3285;       /* 10% - Vibrant medium purple */
-            --color-dark: #5D0565;         /* Dark variant for details */
+            --color-primary: #47034E;
+            --color-secondary: #F8F7F9;
+            --color-accent: #7E3285;
+            --color-dark: #5D0565;
             --color-text: #2D2D2D;
             --color-text-light: #6B7280;
             --color-white: #FFFFFF;
@@ -34,7 +33,6 @@
             font-weight: 400;
         }
 
-        /* Header/Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-dark) 100%);
             color: white;
@@ -132,14 +130,12 @@
             box-shadow: 0 15px 40px rgba(126, 50, 133, 0.5);
         }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* Sections */
         section {
             padding: 110px 20px;
         }
@@ -165,7 +161,6 @@
             font-weight: 300;
         }
 
-        /* About Section */
         .about-content {
             max-width: 900px;
             margin: 0 auto;
@@ -205,7 +200,6 @@
             box-shadow: 0 8px 25px rgba(126, 50, 133, 0.35);
         }
 
-        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -255,7 +249,6 @@
             font-size: 1.05em;
         }
 
-        /* Projects Grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -359,7 +352,6 @@
             transform: translateY(-2px);
         }
 
-        /* Technical Skills */
         .tech-skills {
             max-width: 900px;
             margin: 0 auto;
@@ -401,7 +393,6 @@
             background: linear-gradient(135deg, rgba(126, 50, 133, 0.05) 0%, rgba(93, 5, 101, 0.05) 100%);
         }
 
-        /* Footer */
         footer {
             background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-dark) 100%);
             color: white;
@@ -415,7 +406,6 @@
             font-size: 1.05em;
         }
 
-        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -427,7 +417,6 @@
             }
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.8em;
@@ -457,7 +446,6 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
             <h1>Ismael Solano</h1>
@@ -467,7 +455,6 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="sobre-mi">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -491,7 +478,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="servicios">
         <div class="container">
             <h2 class="section-title">Services</h2>
@@ -521,13 +507,11 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="proyectos">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">Success stories with measurable impact</p>
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-category">eCommerce & SEO</div>
                     <h3>TechStore Premium</h3>
@@ -559,7 +543,6 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-category">Corporate Site & Branding</div>
                     <h3>InnovaLegal Consultants</h3>
@@ -591,7 +574,6 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-category">Blog & Content Marketing</div>
                     <h3>VidaSaludable Magazine</h3>
@@ -627,7 +609,6 @@
         </div>
     </section>
 
-    <!-- Technical Skills -->
     <section id="habilidades">
         <div class="container">
             <h2 class="section-title">Technical Stack</h2>
@@ -690,7 +671,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Ismael Solano. All rights reserved.</p>
@@ -699,7 +679,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -713,7 +692,6 @@
             });
         });
 
-        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -728,7 +706,6 @@
             });
         }, observerOptions);
 
-        // Observe all cards
         document.querySelectorAll('.project-card, .service-card, .skill-category').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
