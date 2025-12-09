@@ -32,6 +32,41 @@
             color: var(--color-text);
             background-color: var(--color-secondary);
             font-weight: 400;
+            position: relative; /* For snow container */
+        }
+
+        /* CHRISTMAS EFFECTS */
+        .snowflake {
+            position: fixed;
+            top: -20px;
+            color: #fff;
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #000;
+            user-select: none;
+            z-index: 9999;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-20px) translateX(0px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) translateX(20px) rotate(360deg); opacity: 0; }
+        }
+
+        /* Holiday Touches */
+        .hero {
+            position: relative;
+        }
+        
+        .santa-hat {
+            position: absolute;
+            top: -45px;
+            left: -30px;
+            font-size: 3rem;
+            transform: rotate(-15deg);
+            z-index: 10;
+            animation: float 3s ease-in-out infinite;
         }
 
         /* Header/Hero Section */
@@ -90,6 +125,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            position: relative;
+            display: inline-block;
         }
 
         .hero .subtitle {
@@ -125,6 +162,26 @@
             animation: fadeInUp 0.8s ease 0.6s backwards;
             letter-spacing: 0.5px;
             box-shadow: 0 10px 30px rgba(126, 50, 133, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Sparkle effect on button for Christmas */
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(rgba(255,255,255,0.2), transparent, transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
         }
 
         .cta-button:hover {
@@ -460,7 +517,11 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1>Ismael Solano</h1>
+            <h1>
+                Ismael Solano
+                <!-- Added Santa Hat for Christmas Vibe -->
+                <div class="santa-hat">🎅</div>
+            </h1>
             <p class="subtitle">WordPress & SEO Expert</p>
             <p class="tagline">Transforming ordinary websites into powerful, revenue-generating digital assets through strategic WordPress development and data-driven SEO optimization, with over 3 years of proven experience delivering exceptional, measurable results that consistently exceed client expectations and drive sustainable business growth</p>
             <a href="#proyectos" class="cta-button">View Projects</a>
@@ -518,8 +579,7 @@
                     <p>Keep your WordPress secure, updated, and running perfectly. Automatic backups, regular updates, and constant monitoring to ensure peace of mind.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Projects Section -->
     <section id="proyectos">
@@ -733,6 +793,31 @@
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
+        });
+
+        /* --- CHRISTMAS SNOW SCRIPT --- */
+        document.addEventListener('DOMContentLoaded', () => {
+            function createSnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.innerHTML = '❄'; // Snowflake character
+                
+                // Random positioning and sizing
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                snowflake.style.animationDuration = Math.random() * 3 + 2.5 + 's'; // Between 2.5s and 5.5s
+                snowflake.style.opacity = Math.random() * 0.5 + 0.3; // Random opacity
+                snowflake.style.fontSize = Math.random() * 10 + 10 + 'px'; // Random size
+                
+                document.body.appendChild(snowflake);
+                
+                // Remove snowflake after it falls to keep DOM clean
+                setTimeout(() => {
+                    snowflake.remove();
+                }, 6000);
+            }
+
+            // Create a snowflake every 100ms
+            setInterval(createSnowflake, 100);
         });
     </script>
 </body>
